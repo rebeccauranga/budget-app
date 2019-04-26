@@ -107,6 +107,15 @@ const UIController = (function() {
 
         },
 
+        clearFields: function() {
+            var fields, fieldsArr;
+
+            fields = document.querySelectorAll(DOMStrings.inputDescription + ', ' + DOMStrings.inputValue);
+
+            fieldsArr = Array.prototype.slice.call(fields);
+
+        },
+
         getDOMStrings: function() {
             return DOMStrings;
         }
